@@ -40,7 +40,8 @@ function enviarRespuestas() {
         if (response.ok) {
             return response.json(); // Convertir la respuesta a JSON
         } else {
-            throw new Error('Error al enviar las respuestas. Por favor, inténtalo de nuevo.');
+            // Error al enviar las respuestas del usuario al backend.
+            throw new Error();
         }
     })
 
@@ -53,7 +54,7 @@ function enviarRespuestas() {
 
     .catch(error => {
         console.error('Error al enviar las respuestas:', error);
-        alert('Error al enviar las respuestas. Por favor, inténtalo de nuevo.');
+        alert('Hubo un problema de conexión al comunicarse con el servidor. Por favor, verifica tu conexión a internet e inténtalo de nuevo.');
     });
 
     // Función para mostrar las carreras recomendadas en la página web HTML
