@@ -53,7 +53,7 @@ function enviarRespuestas() {
     })
 
     .catch(error => {
-        console.error('Error al enviar las respuestas:', error);
+        console.error(error);
         alert('Hubo un problema de conexión al comunicarse con el servidor. Por favor, verifica tu conexión a internet e inténtalo de nuevo.');
     });
 
