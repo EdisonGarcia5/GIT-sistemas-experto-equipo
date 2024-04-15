@@ -48,3 +48,10 @@ body {
     margin: 0 auto; /* Margen automático a los lados para centrarlo horizontalmente */
     text-align: center; /* Alinea el texto dentro del botón al centro */
 }
+
+.Carreras_fondo{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*fuente*/
+    font-size: 18px;/*tamaño de letra*/
+    color: rgb(0, 0, 0);/*color de texto*/
+    background-color: rgba(255, 255, 255, 0.683); /* Fondo transparente */
+}
