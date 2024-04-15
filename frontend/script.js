@@ -45,10 +45,12 @@ function enviarRespuestas() {
         }
     })
 
+    // Mostrar las respuestas en la página web
     .then(data => {
-        // Mostrar las carreras recomendadas en la página web
+        // clase donde esta la lista de respuestas de las carreras.
         mostrarCarreras(data);
-        // Mostrar la sección de "Carreras Recomendadas"
+        /* oculta la zona de las carreras que son las respuestas y solo aparecen cuando 
+        ya se envie las respuestas del cuestionario. */
         document.getElementById('carreras-section').style.display = 'block';
     })
 
