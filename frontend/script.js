@@ -52,6 +52,25 @@ function enviarRespuestas() {
         /* oculta la zona de las carreras que son las respuestas y solo aparecen cuando 
         ya se envie las respuestas del cuestionario. */
         document.getElementById('carreras-section').style.display = 'block';
+        
+        // Ocultar todas las preguntas
+        var questionContainers = document.querySelectorAll('.question-container');
+        questionContainers.forEach(container => {
+            container.style.display = 'none';
+        }); 
+
+        // Ocultar el botón de "Enviar respuestas"
+        var botonEnviar = document.querySelector('.Envio');
+        botonEnviar.style.display = 'none';
+
+        // Mostrar el botón de recargar la página
+        var botonRecargar = document.getElementById('reload-btn');
+        botonRecargar.style.display = 'block';
+        
+        // Evento para recargar la página al hacer clic en el botón
+        botonRecargar.addEventListener('click', function() {
+            location.reload(); // Recargar la página
+        });
     })
 
     .catch(error => {

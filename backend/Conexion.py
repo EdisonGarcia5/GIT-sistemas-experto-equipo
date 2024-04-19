@@ -48,7 +48,7 @@ def logica_sistema_experto(respuestas):
     # Modificar la estructura de los datos devueltos al frontend para incluir tanto los nombres como las descripciones de las carreras
     carreras_recomendadas = [{'nombre': carrera, 'descripcion': coincidencias[carrera]['descripcion']} 
         for carrera in sorted(
-            coincidencias, key=lambda x: coincidencias[x]['coincidencias'], reverse=True)[:3]] # Devolver las tres carreras con más coincidencias
+            coincidencias, key=lambda x: coincidencias[x]['coincidencias'], reverse=True)[:10]] # Devolver las tres carreras con más coincidencias
 
     # Devolver las carreras recomendadas
     return carreras_recomendadas 
